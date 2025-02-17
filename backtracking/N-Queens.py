@@ -1,4 +1,4 @@
-def solveNQueens(n: int):
+def solveNQueens(n: int) -> list[str]:
     board = [['.' for _ in range(n)] for _ in range(n)]
     ans = []
 

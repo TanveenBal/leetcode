@@ -1,3 +1,4 @@
+from typing import Optional
 import heapq
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -5,7 +6,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def kthSmallest(root, k: int) -> int:
+def kthSmallest(root: Optional[TreeNode], k: int) -> int:
     if not root:
         return -1
     heap = []

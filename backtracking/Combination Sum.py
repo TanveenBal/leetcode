@@ -1,4 +1,4 @@
-def combinationSum(nums, target: int):
+def combinationSum(nums: list[int], target: int) -> list[list[int]]:
     ans = []
     def backtrack(i, arr, count):
         nonlocal ans

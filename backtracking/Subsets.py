@@ -1,4 +1,4 @@
-def subsets(nums):
+def subsets(nums: list[int]) -> list[list[int]]:
     ans = []
     def backtrack(index, curr):
         nonlocal ans
