@@ -3,7 +3,7 @@ def findMaxValue(factor: list[int], data: list[list[int]], x: int):
     ans = 0
     n = len(data)
     ansmaxheap = []
-    
+
     for row in range(n):
         maxheap = []
         for val in data[row]:
