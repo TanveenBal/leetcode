@@ -1,31 +1,18 @@
 import heapq
+from collections import defaultdict
 
 def topKFrequent(nums: list[int], k: int) -> list[int]:
-    count = {}
-    heap = []
-
+    freq = defaultdict(int)
     for num in nums:
-        if num in count:
-            count[num] += 1
-        else:
-            count[num] = 1
+        freq[num] += 1
 
-    revmap = {}
+    topK = []
 
-    for num, cnt in count.items():
-        if cnt in revmap:
-            revmap[cnt].append(num)
-        else:
-            revmap[cnt] = [num]
-            heapq.heappush(-cnt, heap)
-
+    for num, freq in freq.items():
+        heapq.heappush(topK, (-freq, num))
 
     ans = []
-
-    while k != 0:
-        curr = heapq.heappop(heap)
-        for num in revmap[-curr]:
-            ans.append(num)
-            k -= 1
+    for _ in range(k):
+        ans.append(heapq.heappop(topK)[1])
 
     return ans
