@@ -8,4 +8,6 @@ def twoSum(nums: list[int], target: int) -> list[int]:
         else:
             diffs[diff] = i
 
+    return []
+
 print(twoSum([3,4,5,6], 7))
