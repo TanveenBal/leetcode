@@ -1,7 +1,7 @@
 def countBinarySubstrings(s: str) -> int:
     ans = 0
-    prev_run_length = 0  # Length of previous run (e.g., '00')
-    cur_run_length = 1   # Length of current run (start with 1 for first char)
+    prev_run_length = 0 
+    cur_run_length = 1
 
     for i in range(1, len(s)):
         if s[i] == s[i - 1]:
@@ -9,9 +9,9 @@ def countBinarySubstrings(s: str) -> int:
         else:
             ans += min(prev_run_length, cur_run_length)
             prev_run_length = cur_run_length
-            cur_run_length = 1  # Reset for new character run
+            cur_run_length = 1
 
-    ans += min(prev_run_length, cur_run_length)  # Handle the last run
+    ans += min(prev_run_length, cur_run_length)
 
     return ans
 
