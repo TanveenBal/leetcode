@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List
 
 class Node:
     def __init__(self, id: str):
@@ -10,30 +10,30 @@ class Node:
 
 def get_path(root: Node, start_id: str, end_id: str) -> List[str]:
     path = []
-    start = False
-    finished = False
-    def dfs(node: Node):
-        nonlocal finished, start, path
-        if node.id == end_id and start:
-            path.append(node.id)
-            finished = True
-            return
+
+    def dfs(node: Node, started: bool) -> bool:
+        nonlocal path
+
         if node.id == start_id:
-            start = True
+            started = True
+
+        if started:
+            path.append(node.id)
+
+        if started and node.id == end_id:
+            return True # Finished
 
         for neighbor in node.neighbors:
-            if start:
-                path.append(node.id)
-            dfs(neighbor)
-            if finished:
-                return
-            if start and path:
-                path.pop()
+            f = dfs(neighbor, started)
+            if f:
+                return True
 
-        if start:
-            start = False
+        if started and (not path or path[-1] != end_id):
+            path.pop()
 
-    dfs(root)
+        return False
+
+    dfs(root, False)
     return path
 
 a = Node("A")
