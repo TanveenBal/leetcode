@@ -1,3 +1,4 @@
+#include <iostream>
 #include <queue>
 #include <vector>
 using namespace std;
@@ -54,3 +55,15 @@ public:
     return count;
   }
 };
+
+int main() {
+  vector<vector<char>> grid = {{'1', '1', '1', '1', '0'},
+                               {'1', '1', '0', '1', '0'},
+                               {'1', '1', '0', '0', '0'},
+                               {'0', '0', '0', '0', '0'}};
+
+  Solution solution;
+  int result = solution.numIslands(grid);
+  cout << "Number of islands: " << result << endl;
+  return 0;
+}
