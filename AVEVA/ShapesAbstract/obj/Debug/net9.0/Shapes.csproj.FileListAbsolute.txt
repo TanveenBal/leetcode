@@ -1,0 +1,15 @@
+C:\Users\ignit\leetcode\AVEVA\Shapes\bin\Debug\net9.0\Shapes.exe
+C:\Users\ignit\leetcode\AVEVA\Shapes\bin\Debug\net9.0\Shapes.deps.json
+C:\Users\ignit\leetcode\AVEVA\Shapes\bin\Debug\net9.0\Shapes.runtimeconfig.json
+C:\Users\ignit\leetcode\AVEVA\Shapes\bin\Debug\net9.0\Shapes.dll
+C:\Users\ignit\leetcode\AVEVA\Shapes\bin\Debug\net9.0\Shapes.pdb
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.AssemblyInfoInputs.cache
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.AssemblyInfo.cs
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.csproj.CoreCompileInputs.cache
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.sourcelink.json
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.dll
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\refint\Shapes.dll
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.pdb
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\Shapes.genruntimeconfig.cache
+C:\Users\ignit\leetcode\AVEVA\Shapes\obj\Debug\net9.0\ref\Shapes.dll
