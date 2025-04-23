@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionIsBupartite
 {
     private bool dfs(int[][] graph, Dictionary<int, bool> set, int node)
     {
