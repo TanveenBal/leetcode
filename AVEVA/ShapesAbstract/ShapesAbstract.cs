@@ -1,26 +1,33 @@
-﻿namespace Shapes
+﻿namespace ShapesAbstract
 {
-    public interface IShape
+    abstract class Shape
     {
-        void print();
-        void draw();
-        double area();
+        protected string name { get; set; }
+        public Shape(string name)
+        {
+            this.name = name;
+        }
+
+        public void print()
+        {
+            Console.WriteLine($"{this.name}");
+        }
+
+        public abstract void draw();
+
+        public abstract double area();
     }
 
-    class Square : IShape
+    class Square : Shape
     {
-        private string Name { get; set; }
         private int Side { get; set; }
 
-        public Square(int side)
+        public Square(int side) : base("Square")
         {
-            this.Name = "Square";
             this.Side = side;
         }
 
-        public void print() { Console.WriteLine($"{this.Name}"); }
-
-        public void draw()
+        public override void draw()
         {
             for (int i = 0; i < this.Side; i++)
             {
@@ -35,28 +42,24 @@
             }
         }
 
-        public double area()
+        public override double area()
         {
             return this.Side * this.Side;
         }
     }
 
-    class Triangle : IShape
+    class Triangle : Shape
     {
-        private string Name { get; set; }
         private int Base { get; set; }
         private int Height { get; set; }
 
-        public Triangle(int Base, int Height)
+        public Triangle(int Base, int Height) : base("Triangle")
         {
-            this.Name = "Triangle";
             this.Base = Base;
             this.Height = Height;
         }
 
-        public void print() { Console.WriteLine($"{this.Name}"); }
-
-        public void draw()
+        public override void draw()
         {
             int maxStars = 1 + 2 * (Height - 1);
 
@@ -75,26 +78,22 @@
             }
         }
 
-        public double area()
+        public override double area()
         {
             return (this.Base * this.Height) / 2;
         }
     }
 
-    class Circle : IShape
+    class Circle : Shape
     {
-        public string Name { get; set; }
         private int Radius { get; set; }
 
-        public Circle(int Radius)
+        public Circle(int Radius) : base("Circle")
         {
-            this.Name = "Circle";
             this.Radius = Radius;
         }
 
-        public void print() { Console.WriteLine($"{this.Name}"); }
-
-        public void draw()
+        public override void draw()
         {
             double rIn = this.Radius - 0.4;
             double rOut = this.Radius + 0.4;
@@ -113,7 +112,7 @@
             }
         }
 
-        public double area()
+        public override double area()
         {
             return 3.14 * this.Radius * this.Radius;
         }
@@ -123,9 +122,9 @@
     {
         static void Main(string[] args)
         {
-            List<IShape> shapes = new List<IShape> { new Square(5), new Triangle(4, 6), new Circle(3) };
+            List<Shape> shapes = new List<Shape> { new Square(5), new Triangle(4, 6), new Circle(3) };
 
-            foreach (IShape shape in shapes)
+            foreach (Shape shape in shapes)
             {
                 shape.print();
                 shape.draw();
