@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionUpdateMatrix
 {
     public int[][] UpdateMatrix(int[][] mat)
     {
