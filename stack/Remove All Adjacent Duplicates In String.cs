@@ -1,4 +1,4 @@
-public class SolutionRemoveDuplicates
+public class SolutionRemoveDuplicateCharacters
 {
     public string RemoveDuplicates(string s)
     {
