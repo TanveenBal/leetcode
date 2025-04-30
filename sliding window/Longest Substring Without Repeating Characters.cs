@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionLengthOfLongestSubstring
 {
     public int LengthOfLongestSubstring(string s)
     {
@@ -8,9 +8,7 @@ public class Solution
         for (int i = 0; i < s.Length; i++)
         {
             if (seen.ContainsKey(s[i]) && seen[s[i]] >= start)
-            {
                 start = seen[s[i]] + 1;
-            }
 
             seen[s[i]] = i;
             maxLength = Math.Max(maxLength, i - start + 1);
