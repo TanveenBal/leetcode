@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionMoveZeroes
 {
     public void MoveZeroes(int[] nums)
     {
