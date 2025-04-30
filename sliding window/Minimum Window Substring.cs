@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionMinWindow
 {
     public string MinWindow(string s, string t)
     {
