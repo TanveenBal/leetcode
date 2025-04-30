@@ -15,7 +15,7 @@ public class Solution
         Dictionary<char, int> have = new Dictionary<char, int>();
         int l = 0, r = 0;
         int valid = 0;
-        int start = 0, len = int.MaxValue;
+        int start = 0, end = int.MaxValue;
 
         while (r < s.Length)
         {
@@ -31,10 +31,10 @@ public class Solution
 
             while (valid == need.Count)
             {
-                if (r - l < len)
+                if (r - l < end)
                 {
                     start = l;
-                    len = r - l;
+                    end = r - l;
                 }
 
                 char d = s[l];
@@ -48,6 +48,6 @@ public class Solution
             }
         }
 
-        return len == int.MaxValue ? "" : s.Substring(start, len);
+        return end == int.MaxValue ? "" : s.Substring(start, end);
     }
 }
