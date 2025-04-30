@@ -6,13 +6,9 @@ public class SolutionCanConstruct
         foreach (char c in magazine)
         {
             if (freq.ContainsKey(c))
-            {
                 freq[c]++;
-            }
             else
-            {
                 freq.Add(c, 1);
-            }
         }
 
         foreach (char c in ransomNote)
@@ -21,14 +17,10 @@ public class SolutionCanConstruct
             {
                 freq[c]--;
                 if (freq[c] < 0)
-                {
                     return false;
-                }
             }
             else
-            {
                 return false;
-            }
         }
         return true;
     }

@@ -10,13 +10,9 @@ public class SolutionMaxProfit
         while (r < len)
         {
             if (prices[r] > prices[l])
-            {
                 ans = Math.Max(ans, prices[r] - prices[l]);
-            }
             else
-            {
                 l = r;
-            }
             r++;
         }
 
