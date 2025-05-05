@@ -4,11 +4,10 @@ public class Node
     public Node[] Children;
     public bool IsEndOfWord;
 
-    public Node(char c, bool end = false)
+    public Node(char c)
     {
         Character = c;
         Children = new Node[26];
-        IsEndOfWord = end;
     }
 }
 
