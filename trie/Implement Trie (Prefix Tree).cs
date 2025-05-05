@@ -1,55 +1,49 @@
-public class Node
+public class TrieNode
 {
-    public char Character;
-    public Node[] Children;
+    public TrieNode[] Children;
     public bool IsEndOfWord;
 
-    public Node(char c)
-    {
-        Character = c;
-        Children = new Node[26];
-    }
+    public TrieNode() { Children = new TrieNode[26]; }
 }
 
 public class Trie
 {
-    private Node[] start;
+    public TrieNode start;
 
-    public Trie()
-    {
-        start = new Node[26];
-    }
+    public Trie() { start = new TrieNode(); }
+
     public void Insert(string word)
     {
         if (string.IsNullOrEmpty(word)) return;
 
         int index = word[0] - 'a';
-        if (start[index] == null)
-            start[index] = new Node(word[0]);
+        if (start.Children[index] == null)
+            start.Children[index] = new TrieNode();
 
-        Node curr = start[index];
+        TrieNode curr = start.Children[index];
 
         for (int i = 1; i < word.Length; ++i)
         {
             index = word[i] - 'a';
             if (curr.Children[index] == null)
-                curr.Children[index] = new Node(word[i]);
+                curr.Children[index] = new TrieNode();
 
             curr = curr.Children[index];
         }
 
         curr.IsEndOfWord = true;
     }
+
     public bool Search(string word)
     {
         if (string.IsNullOrEmpty(word)) return false;
 
         int index = word[0] - 'a';
 
-        if (start[index] == null)
+        if (start.Children[index] == null)
             return false;
 
-        Node curr = start[index];
+        TrieNode curr = start.Children[index];
 
         for (int i = 1; i < word.Length; ++i)
         {
@@ -62,16 +56,17 @@ public class Trie
 
         return curr.IsEndOfWord;
     }
+
     public bool StartsWith(string prefix)
     {
         if (string.IsNullOrEmpty(prefix)) return false;
 
         int index = prefix[0] - 'a';
 
-        if (start[index] == null)
+        if (start.Children[index] == null)
             return false;
 
-        Node curr = start[index];
+        TrieNode curr = start.Children[index];
 
         for (int i = 1; i < prefix.Length; ++i)
         {
