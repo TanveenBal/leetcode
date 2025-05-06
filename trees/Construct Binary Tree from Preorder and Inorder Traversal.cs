@@ -11,7 +11,7 @@
  *     }
  * }
  */
-public class Solution
+public class SolutionBuildTree
 {
     public class TreeNode
     {
