@@ -41,7 +41,7 @@ public class UnionFind
     }
 }
 
-class Solution
+class SolutionCountComponents
 {
     public int CountComponents(int n, int[][] edges)
     {
