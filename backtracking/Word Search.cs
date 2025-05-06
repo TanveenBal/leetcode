@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionExist
 {
     private char[][] board;
     private string word;

@@ -11,7 +11,7 @@
  *     }
  * }
  */
-public class Solution
+public class SolutionMaxPathSum
 {
     public class TreeNode
     {

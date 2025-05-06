@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionBinarySearch
 {
     private int BinarySearch(int[] nums, int target, int l, int h)
     {
