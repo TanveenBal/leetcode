@@ -1,0 +1,5 @@
+/Users/tanveenbal/leetcode/obj/Debug/net9.0/leetcode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tanveenbal/leetcode/obj/Debug/net9.0/leetcode.AssemblyInfoInputs.cache
+/Users/tanveenbal/leetcode/obj/Debug/net9.0/leetcode.AssemblyInfo.cs
+/Users/tanveenbal/leetcode/obj/Debug/net9.0/leetcode.csproj.CoreCompileInputs.cache
+/Users/tanveenbal/leetcode/obj/Debug/net9.0/leetcode.sourcelink.json

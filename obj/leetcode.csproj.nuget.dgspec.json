@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ignit\\leetcode\\leetcode.csproj": {}
+    "/Users/tanveenbal/leetcode/leetcode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ignit\\leetcode\\leetcode.csproj": {
+    "/Users/tanveenbal/leetcode/leetcode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignit\\leetcode\\leetcode.csproj",
+        "projectUniqueName": "/Users/tanveenbal/leetcode/leetcode.csproj",
         "projectName": "leetcode",
-        "projectPath": "C:\\Users\\ignit\\leetcode\\leetcode.csproj",
-        "packagesPath": "C:\\Users\\ignit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignit\\leetcode\\obj\\",
+        "projectPath": "/Users/tanveenbal/leetcode/leetcode.csproj",
+        "packagesPath": "/Users/tanveenbal/.nuget/packages/",
+        "outputPath": "/Users/tanveenbal/leetcode/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ignit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/tanveenbal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

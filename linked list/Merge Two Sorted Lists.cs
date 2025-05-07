@@ -11,10 +11,21 @@
  */
 public class SolutionMergeTwoLists
 {
-    public ListNode MergeTwoLists(ListNode list1, ListNode list2)
+    public class ListNode
     {
-        ListNode merged = new ListNode();
-        ListNode currm = merged;
+        public int val;
+        public ListNode? next;
+        public ListNode(int val = 0, ListNode? next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
+    public ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
+    {
+        ListNode? merged = new ListNode();
+        ListNode? currm = merged;
 
 
         while (list1 != null && list2 != null)
