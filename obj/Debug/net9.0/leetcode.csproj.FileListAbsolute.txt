@@ -1,0 +1,5 @@
+C:\Users\ignit\leetcode\obj\Debug\net9.0\leetcode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignit\leetcode\obj\Debug\net9.0\leetcode.AssemblyInfoInputs.cache
+C:\Users\ignit\leetcode\obj\Debug\net9.0\leetcode.AssemblyInfo.cs
+C:\Users\ignit\leetcode\obj\Debug\net9.0\leetcode.csproj.CoreCompileInputs.cache
+C:\Users\ignit\leetcode\obj\Debug\net9.0\leetcode.sourcelink.json

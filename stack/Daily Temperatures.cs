@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionDailyTemperatures
 {
     public int[] DailyTemperatures(int[] temperatures)
     {

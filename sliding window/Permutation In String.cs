@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionCheckInclusion
 {
     public bool CheckInclusion(string s1, string s2)
     {

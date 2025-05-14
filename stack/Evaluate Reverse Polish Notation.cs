@@ -1,4 +1,4 @@
-public class Solution
+public class SolutionEvalRPN
 {
     public int EvalRPN(string[] tokens)
     {

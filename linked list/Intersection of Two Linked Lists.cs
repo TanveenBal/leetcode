@@ -2,17 +2,17 @@
 public class ListNode
 {
     public int val;
-    public ListNode next;
+    public ListNode? next;
     public ListNode(int x) { val = x; }
 }
 
 public class SolutionGetIntersectionNode
 {
-    public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+    public ListNode? GetIntersectionNode(ListNode headA, ListNode headB)
     {
         HashSet<ListNode> setA = new HashSet<ListNode>();
 
-        ListNode curr = headA;
+        ListNode? curr = headA;
         while (curr != null)
         {
             setA.Add(curr);

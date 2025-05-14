@@ -1,4 +1,4 @@
-public class SolutionTwoSum
+public class SolutionTwoSumII
 {
     public int[] TwoSum(int[] numbers, int target)
     {
