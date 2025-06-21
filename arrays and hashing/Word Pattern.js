@@ -7,15 +7,17 @@ var wordPattern = function (pattern, s) {
   const strings = s.split(" ");
   if (strings.length !== pattern.length) return false;
 
-  const mapps = {};
-  const mapsp = {};
+  const mapps = new Map();
+  const mapsp = new Map();
 
   for (let i = 0; i < pattern.length; ++i) {
-    if (!mapps[pattern[i]]) mapps[pattern[i]] = strings[i];
-    if (!mapsp[strings[i]]) mapsp[strings[i]] = pattern[i];
+    const p = pattern[i];
+    const word = strings[i];
 
-    if (mapps[pattern[i]] !== strings[i] || mapsp[strings[i]] !== pattern[i])
-      return false;
+    if (!mapps.has(p)) mapps.set(p, word);
+    if (!mapsp.has(word)) mapsp.set(word, p);
+
+    if (mapps.get(p) !== word || mapsp.get(word) !== p) return false;
   }
 
   return true;
